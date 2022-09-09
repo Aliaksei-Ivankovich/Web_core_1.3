@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и сервисы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <button class="menu-button">
+                <img class="menu-button__image" src="/icons/burger.svg" alt="Меню">
+            </button>
+            <img class="page-header__logo" src="/icons/logo.svg" alt="Логотип CPS">
+            <nav class="main-menu main-menu--mr--auto">
+                <ul class="main-menu__list main-menu__list--768px">
+                    <li class="main-menu__item">
+                        <button class="menu-button">
+                            <img class="menu-button__image" src="/icons/call.svg" alt="Ремонт">
+                        </button>
+                    </li>
+                    <li class="main-menu__item">
+                        <button class="menu-button">
+                            <img class="menu-button__image" src="/icons/chat.svg" alt="Проверить статус">
+                        </button>
+                    </li>
+                    <li class="main-menu__item">
+                        <button class="menu-button">
+                            <img class="menu-button__image" src="/icons/profile.svg" alt="Проверить статус">
+                        </button>
+                    </li>
+                </ul>
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <button class="menu-button">
+                            <img class="menu-button__image" src="/icons/repair.svg" alt="Ремонт">
+                        </button>
+                    </li>
+                    <li class="main-menu__item">
+                        <button class="menu-button">
+                            <img class="menu-button__image" src="/icons/checkstatus.svg" alt="Проверить статус">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-header__title-wrapper">
+            <h1 class="page-header__title">Услуги и сервисы</h1>
+            <nav class="main-menu main-menu--desctop">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <label for="repair">Оставить заявку</label>
+                        <button id="repair" class="menu-button">
+                            <img class="menu-button__image" src="/icons/repair.svg" alt="Ремонт">
+                        </button>
+                    </li>
+                    <li class="main-menu__item">
+                        <lable for="repair">Статус ремонта</lable>
+                        <button class="menu-button">
+                            <img class="menu-button__image" src="/icons/checkstatus.svg" alt="Проверить статус">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <nav class="page-header__nav">
+            <ul class="nav-menu">
+                <li class="nav-menu__item nav-menu__item--active">
+                    <a class="nav-menu__link" href="#">Ремонтируемые бренды</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#">Ремонтируемые устройства</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#">Адреса сервисных центров</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#">Цены на услуги</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#">Специальные цены</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main">
+        <div class="page-main__content-wrapper">
+            <div>
+                <p class="page-main__content">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                    Только у нас вы можете отремонтировать свой ноутбук Dell с 
+                    официальной гарантией производителя.
+                </p>
+                <button class="page-main__button">
+                    <img src="/icons/arrows.svg" alt="Стрелка вниз">
+                    <span>Читать далее</span>
+                </button>
+            </div>
+            <picture class="page-main__image">
+                <source media="(min-width: 1120px)" srcset="/img/CPS_logo_1120.jpg">
+                <source media="(min-width: 768px)" srcset="/img/CPS_logo_768.jpg">
+                <img src="/img/CPS_logo_320.jpg" alt="Логотип CPS" style="width:auto;">
+            </picture>
+        </div>
+    </main>
+    <footer class="page-footer"></footer>
+</body>
+</html>
