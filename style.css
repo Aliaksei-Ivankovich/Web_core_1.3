@@ -15,7 +15,7 @@ body {
 }
 
     /* ---Header--- */
-.page-header {
+.header {
     margin: 0 auto;
     min-width: 320px;
     max-width: 320px;
@@ -23,7 +23,12 @@ body {
     flex-direction: column;
 }
 
-.page-header__wrapper {
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__wrapper {
     position: relative;
     padding: 1.1rem 1rem;
     display: flex;
@@ -33,20 +38,24 @@ body {
     border-bottom: 1px solid #D9FFF5;
 }
 
-.page-header__title-wrapper {
+.header__title-wrapper {
     display: flex;
+    padding-right: 2rem;
+    padding-top: 1.55rem;
+    align-items: end;
+    justify-content: space-between;
+    background-color: #F8F8F8;
 }
 
-.page-header__title {
+.header__title {
     position: relative;
-    padding-top: 1.55rem;
     padding-left: 1rem;
     font-size: 28px;
     color: #1B1C21;
     background-color: #F8F8F8;
 }
 
-.page-header__title::before {
+.header__title::before {
     content: "";
     width: 0.25rem;
     height: 2.5rem;
@@ -55,12 +64,6 @@ body {
     position: absolute;
     left: 0rem;
     
-}
-
-.page-header__nav {
-    padding-top: 1.55rem;
-    padding-left: 1rem;
-    background-color: #F8F8F8;
 }
 
 
@@ -78,7 +81,7 @@ body {
     margin-left: auto;
 }
 
-.page-header__wrapper::before {
+.header__wrapper::before {
     content: "";
     width: 0.125rem;
     height: 2rem;
@@ -88,17 +91,11 @@ body {
     left: 11.6rem;
 }
 
-.page-header__title-wrapper {
-    padding-right: 2rem;
-    align-items: end;
-    justify-content: space-between;
-    background-color: #F8F8F8;
-}
 
 .main-menu__list {
     display: flex;
     list-style-type: none;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .main-menu__list--768px {
@@ -109,7 +106,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: #1B1C21;
+    color:#1B1C21;
     gap: 0.5rem;
 }
 
@@ -128,6 +125,18 @@ body {
     outline-color: #41F6D7;
 }
 
+.menu-button__desctop {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    background-color:  #F8F8F8;
+    border-radius: 0;
+    font-family: TT lakes, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    gap: 0.17rem;
+}
+
 .menu-button__image {
     max-width: 100%;
     height: auto;
@@ -142,6 +151,7 @@ body {
 
 /* ---Nav-menu--- */
 .nav-menu {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,28 +183,32 @@ body {
 
 
 /* ---Main--- */
-.page-main {
+.main {
     margin: 0 auto;
+    padding: 0  1rem;
     min-width: 320px;
     max-width: 320px;
     background-color: #F8F8F8;
 }
 
-.page-main__content-wrapper {
+.main__nav {
+    padding-top: 1.55rem;
+    background-color: #F8F8F8;
+}
+
+.main__content-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.page-main__content {
+.main__content {
     padding-top: 1.55rem;
-    padding-left: 1rem;
-    padding-right: 1.2rem;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
 }
 
-.page-main__button {
+.main__button {
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -203,13 +217,12 @@ body {
     background-color: #F8F8F8;
     font-size: 16px;
     padding-top: 1rem;
-    padding-left: 1rem;
     letter-spacing: -0.2px;
     cursor: pointer;
     outline-color: #41F6D7;
 }
 
-.page-main__image {
+.main__image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +231,7 @@ body {
 
 
 /* ---Footer--- */
-.page-footer {
+.footer {
     margin: 0 auto;
     min-height: 2rem;
     background-color: #F8F8F8; 
@@ -228,21 +241,21 @@ body {
 
 /* ---768px---*/
 @media (min-width: 768px) {
-    .page-header {
+    .header {
         max-width: 768px;
     }
 
-    .page-header__wrapper {
+    .header__wrapper {
         padding: 1.1rem 1.5rem;
         gap: 2.55rem;
     }
 
-    .page-header__wrapper::before {
+    .header__wrapper::before {
         background-color: #EAEAEA;
         left: 5.3rem;
     }
 
-    .page-header__wrapper::after {
+    .header__wrapper::after {
         content: "";
         width: 0.125rem;
         height: 2rem;
@@ -256,37 +269,35 @@ body {
         display: flex;
     }
 
-    .page-header__title {
+    .header__title {
         padding-left: 1.5rem;
     }
 
-    .page-header__nav {
+    .main__nav {
         padding-top: 2rem;
-        padding-left: 1.5rem;
     }
 
-    .page-main {
+    .main {
         max-width: 768px;
+        padding: 0  1.5rem;
     }
  
-    .page-main__content-wrapper {
+    .main__content-wrapper {
         flex-direction: row;
-        padding-top: 1rem;
-        padding-right: 1.5rem;
+        padding-top: 2rem;
         justify-content: space-between;
     }
 
-    .page-main__button {
-        padding-left: 1.5rem;
-    }
-
-    .page-main__content {
-        padding-left: 1.5rem;
-        padding-top: 1rem;
+    .main__content {
         letter-spacing: 0.2px;
+        padding-top: 0;
     }
 
-    .page-footer {
+    .main__image {
+        padding-top: 0;
+    }
+
+    .footer {
         min-height: 2.5rem;
         max-width: 768px;
     }
@@ -294,7 +305,7 @@ body {
 
 /* ---1120px---*/
 @media (min-width: 1120px) {
-    .page-header {
+    .header {
         max-width: 1120px;
         background-color: #F8F8F8;
     }
@@ -303,24 +314,22 @@ body {
         display: block;
     }
 
-    .page-header__title-wrapper {
-        padding-top: 1.15rem;
+    .header__title-wrapper {
+        padding-top: 2rem;
         align-items: end;
         justify-content: space-between;
     }
 
-    .page-header__wrapper {
+    .header__wrapper {
         display: none;
     }
 
-    .page-header__title {
+    .header__title {
         padding-left: 2rem;
     }
 
-    .page-header__nav {
-        padding-top: 0.6rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .main__nav {
+        padding-top: 0.5rem;
     }
 
     .nav-menu {
@@ -332,32 +341,21 @@ body {
         margin-bottom: 0.5rem;
     }
 
-    .page-main {
+    .main {
         max-width: 1120px;
+        padding: 0  2rem;
     }
  
-    .page-main__content-wrapper {
-        padding-right: 1.7rem;
-        padding-top: 0;
+    .main__content-wrapper {
+        padding-top: 0rem;
+        gap: 1rem;
     }
 
-    .page-main__content {
-        padding-top: 0.5rem;
-    }
-
-    .page-main__image {
+    .main__image {
         padding-top: 0rem;
     }
 
-    .page-main__button {
-        padding-left: 2rem;
-    }
-
-    .page-main__content {
-        padding-left: 2rem;
-    }
-
-    .page-footer {
+    .footer {
         max-width: 1120px;
     }
 }
