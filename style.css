@@ -40,8 +40,8 @@ body {
 
 .header__title-wrapper {
     display: flex;
-    padding-right: 2rem;
-    padding-top: 1.55rem;
+
+    padding: 1.55rem 0 0 1rem;
     align-items: end;
     justify-content: space-between;
     background-color: #F8F8F8;
@@ -49,7 +49,6 @@ body {
 
 .header__title {
     position: relative;
-    padding-left: 1rem;
     font-size: 28px;
     color: #1B1C21;
     background-color: #F8F8F8;
@@ -62,7 +61,7 @@ body {
     background-color: #41F6D7;
     border-radius: 0 0.5rem 0.5rem 0;
     position: absolute;
-    left: 0rem;
+    left: -1rem;
     
 }
 
@@ -265,13 +264,18 @@ body {
         left: 39.1rem;
     }
 
+    .header__title-wrapper {
+        padding: 1.55rem 0 0 1.5rem;
+    }
+
+    .header__title::before {
+        left: -1.5rem;  
+    }
+
     .main-menu__list--768px {
         display: flex;
     }
 
-    .header__title {
-        padding-left: 1.5rem;
-    }
 
     .main__nav {
         padding-top: 2rem;
@@ -315,18 +319,19 @@ body {
     }
 
     .header__title-wrapper {
-        padding-top: 2rem;
+        padding: 2rem 2rem 0 2rem;
         align-items: end;
         justify-content: space-between;
+    }
+
+    .header__title::before {
+        left: -2rem;  
     }
 
     .header__wrapper {
         display: none;
     }
 
-    .header__title {
-        padding-left: 2rem;
-    }
 
     .main__nav {
         padding-top: 0.5rem;
