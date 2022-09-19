@@ -47,6 +47,16 @@ body {
     background-color: #F8F8F8;
 }
 
+.header__wrapper::before {
+    content: "";
+    width: 0.125rem;
+    height: 2rem;
+    background-color: #EAEAEA;
+    border-radius: 1rem;
+    position: absolute;
+    left: 11.6rem;
+}
+
 .header__title {
     position: relative;
     font-size: 28px;
@@ -62,7 +72,6 @@ body {
     border-radius: 0 0.5rem 0.5rem 0;
     position: absolute;
     left: -1rem;
-    
 }
 
 
@@ -79,17 +88,6 @@ body {
 .main-menu--mr--auto {
     margin-left: auto;
 }
-
-.header__wrapper::before {
-    content: "";
-    width: 0.125rem;
-    height: 2rem;
-    background-color: #EAEAEA;
-    border-radius: 1rem;
-    position: absolute;
-    left: 11.6rem;
-}
-
 
 .main-menu__list {
     display: flex;
