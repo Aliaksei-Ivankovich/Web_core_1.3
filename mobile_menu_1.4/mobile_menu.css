@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
 }
 
@@ -51,6 +51,7 @@ body {
     box-shadow: 
                 -2px 0px 4px rgba(69, 79, 126, 0.02), 
                 16px 0px 52px rgba(14, 24, 80, 0.2);
+    background: #ffffff;
 }
 
 
@@ -168,7 +169,6 @@ body {
     height: 100%;
     background: linear-gradient(to right, #41F6D7, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0.05), #ffffff);
     transition: opacity, width 350ms ease-in-out;
-    z-index: -10;
 }
 
 .nav-list__item:hover::after {
