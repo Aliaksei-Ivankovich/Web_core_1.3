@@ -34,15 +34,11 @@ addEventListener('DOMContentLoaded', () => {
     onWindowResize();
   });
   
-  
   const showBtn = document.querySelector('.content-button');
   const slider = document.querySelector('.slider');
   
-  
   function btnToggle (btn, wrapper) {
-    const btnText = btn.querySelector('span');
-    const btnImg = btn.querySelector('img');
-  
+
     btn.addEventListener('click', (e) => {
       wrapper.classList.toggle('slider--show-all');
       e.currentTarget.children[1].textContent = wrapper.classList.contains('slider--show-all') ? 'Скрыть' : 'Показать все';
